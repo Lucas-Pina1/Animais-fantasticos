@@ -37,8 +37,9 @@ export default class Accordion {
   // inicia função
   init() {
     // ativar primeiro item
-    this.if(this.accordionList.length);
-    this.toggleAccordion(this.accordionList[0]);
-    this.addAccordionEvent();
+    if (this.accordionList.length) {
+      this.toggleAccordion(this.accordionList[0]);
+      this.addAccordionEvent();
+    }
   }
 }
